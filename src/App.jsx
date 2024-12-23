@@ -7,6 +7,7 @@ import PricingCards from "./HomePage/PricingCards.jsx";
 import Testimonials from "./HomePage/Testimonials.jsx";
 import FAQAccordion from "./HomePage/Faq.jsx";
 import Subscription from "./HomePage/Subscription.jsx";
+import Footer from "./HomePage/Footer.jsx";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Testimonials/>
           <FAQAccordion/>
           <Subscription/>
+          <Footer/>
       </div>
 
   )

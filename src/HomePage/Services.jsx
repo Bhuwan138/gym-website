@@ -26,7 +26,7 @@ const Services=()=>{
 
     return(
     <div>
-        <div className="flex  flex-col justify-center mt-10 gap-2 items-center mb-10">
+        <div className="flex  flex-col   justify-center mt-10 gap-2 items-center mb-10">
             <div className="text-5xl font-semibold text-mine-shaft-100">What We <span
                 className="text-fuchsia-pink-400">Offer</span> For You
             </div>
@@ -35,9 +35,9 @@ const Services=()=>{
             </div>
 
         </div>
-        <div className="flex  items-center justify-around  h-full mb-10 group">
+        <div className="flex  flex-col  gap-8 md:flex-row items-center md:justify-around  h-full mb-10 group">
             {services.map((item) => (
-                <div key={item.id} className="flex flex-col gap-2 w-[25%] max-h-[5%]  hover:translate-y-1  transaction duration-200 ease-in-out  border border-fuchsia-pink-300 px-4 py-3 rounded-lg ">
+                <div key={item.id} className="flex flex-col gap-2 w-[80%]  hover:translate-y-1  transaction duration-200 ease-in-out  border border-fuchsia-pink-300 px-4 py-3 rounded-lg ">
                     <div  className=" flex justify-center w-16  p-1 bg-mine-shaft-800 rounded-full ">
                         {item.icon}
                     </div>
