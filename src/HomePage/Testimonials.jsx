@@ -4,44 +4,44 @@ import {Carousel} from "@mantine/carousel";
 
 import TestiMonalsCard from "./TestiMonalsCard.jsx";
 
- const testimonials=[
+const testimonials=[
     {
         avatar:"avatar",
-        name: "Sarita Bist",
+        name: "Smarika Bist",
         review: "This job portal made job search easy and quick. Recommended to all job seekers!",
         rating:4
     },
 
     {
         avatar:"avatar1",
-        name: "Bhuwan Pandey",
+        name: "Laxmal Pandey",
         review: "Found my dream job within a week! The application process was smooth.",
         rating:4.5
     },
     {
         avatar:"avatar2",
-        name: "Puja Chand",
+        name: "Shreya Jain",
         review: "I secured a job offer within days of applying. Exceptional user experience and support.",
         rating:5
     },
     {
         avatar:"avatar1",
-        name: "Deepak Pandey",
+        name: "Kb",
         review: "Highly efficient job portal with excellent resources. Helped me land a great position.",
         rating:4.5
     },
-     {
-         avatar:"avatar2",
-         name: "Kabita",
-         review: "I secured a job offer within days of applying. Exceptional user experience and support.",
-         rating:5
-     },
-     {
-         avatar:"avatar1",
-         name: "Ram",
-         review: "Highly efficient job portal with excellent resources. Helped me land a great position.",
-         rating:4.5
-     },
+    {
+        avatar:"avatar2",
+        name: "Kabita",
+        review: "I secured a job offer within days of applying. Exceptional user experience and support.",
+        rating:5
+    },
+    {
+        avatar:"avatar1",
+        name: "Ram",
+        review: "Highly efficient job portal with excellent resources. Helped me land a great position.",
+        rating:4.5
+    },
 ]
 const Testimonials=()=>{
     return(<div className=" w-full my-10 px-12">

@@ -1,5 +1,5 @@
 import {IconCircleCheck, IconCircleDashedNumber1, IconPlayerPause,IconArrowRight} from "@tabler/icons-react";
-import {ActionIcon, Button} from "@mantine/core";
+import { Button} from "@mantine/core";
 
 
 const Services=()=>{
@@ -35,7 +35,7 @@ const Services=()=>{
             </div>
 
         </div>
-        <div className="flex  flex-col  gap-8 md:flex-row items-center md:justify-around  h-full mb-10 group">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  place-items-center h-full mb-10 group">
             {services.map((item) => (
                 <div key={item.id} className="flex flex-col gap-2 w-[80%]  hover:translate-y-1  transaction duration-200 ease-in-out  border border-fuchsia-pink-300 px-4 py-3 rounded-lg ">
                     <div  className=" flex justify-center w-16  p-1 bg-mine-shaft-800 rounded-full ">

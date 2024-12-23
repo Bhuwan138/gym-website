@@ -14,7 +14,7 @@ const NavbarPage=()=>{
 
 
     return(
-        <div className="flex  gap-5 h-full items-center">
+        <div className=" bs-mx:hidden flex  gap-5 h-full items-center">
             {
                 links.map(link=>(
                     <div key={link.name} className={`${link.name==='Home' && " text-fuchsia-pink-400" } flex items-center  h-full `}>
