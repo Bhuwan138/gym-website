@@ -21,7 +21,7 @@ const Footer=()=>{
     ];
 
     return(
-        <div className="bg-mine-shaft-950   pb-52 pt-4 font-['poppins'] ">
+        <div className="bg-mine-shaft-950   pb-20 pt-4 font-['poppins'] ">
             <div className='mt-20 flex gap-10 justify-around w-full  '>
                 <div className=" w-1/4 flex flex-col gap-4 ml-20">
                     <div>
