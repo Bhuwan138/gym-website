@@ -13,6 +13,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import GymFeatures from './HomePage/GymFeatures .jsx';
 import Locations from './HomePage/Locations.jsx';
 
+
 function App() {
     const { scrollY } = useScroll();
 
@@ -28,41 +29,42 @@ function App() {
 
     return (
         <div className="min-h-screen font-['poppins'] bg-mine-shaft-950 pb-20">
-            <motion.div style={{ y: headerY }}>
-                <Header />
+            <motion.div style={{y: headerY}}>
+                <Header/>
             </motion.div>
 
-            <motion.div style={{ y: getStartY }}>
-                <GetStart />
+            <motion.div style={{y: getStartY}}>
+                <GetStart/>
             </motion.div>
 
-            <motion.div style={{ y: servicesY }}>
-                <Services />
+            <motion.div style={{y: servicesY}}>
+                <Services/>
             </motion.div>
 
-            <motion.div style={{ y: pricingY }}>
-                <PricingCards />
+            <motion.div style={{y: pricingY}}>
+                <PricingCards/>
             </motion.div>
 
-            <GymFeatures />
+            <GymFeatures/>
 
-            <motion.div style={{ y: testimonialsY }}>
-                <Testimonials />
+            <motion.div style={{y: testimonialsY}}>
+                <Testimonials/>
             </motion.div>
 
-            <motion.div style={{ y: faqY }}>
-                <FAQAccordion />
+            <motion.div style={{y: faqY}}>
+                <FAQAccordion/>
             </motion.div>
 
-            <Locations />
+            <Locations/>
 
-            <motion.div style={{ y: subscriptionY }}>
-                <Subscription />
+            <motion.div style={{y: subscriptionY}}>
+                <Subscription/>
             </motion.div>
 
-            <motion.div style={{ y: footerY }}>
-                <Footer />
+            <motion.div style={{y: footerY}}>
+                <Footer/>
             </motion.div>
+
         </div>
     );
 }
