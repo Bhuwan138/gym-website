@@ -30,7 +30,7 @@ const Locations = () => {
             <div className="text-mine-shaft-200 mb-6">
                 Explore our gyms across the city. Click on the markers to learn more about each location.
             </div>
-            <LoadScript googleMapsApiKey={"AIzaSyA6GW3rrk8nRrwp6UfCzy6W_UQD1iBqePQ"}>
+            <LoadScript googleMapsApiKey={"AIzaSyB-uYx-3U_IOdyM_PY-4uCvw5r2Y3cyGqk"}>
                 <GoogleMap
                     mapContainerStyle={containerStyle}
                     center={center}

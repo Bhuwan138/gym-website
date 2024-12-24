@@ -74,7 +74,7 @@ const PricingCards = () => {
                 {plans.map((plan, index) => (
                     <motion.div
                         key={index}
-                        className="group bg-mine-shaft-800 px-6 py-8 rounded-lg shadow-lg h-full transition-transform"
+                        className="group bg-mine-shaft-800 px-6 py-8 rounded-lg shadow-lg h-full hover:bg-fuchsia-700 transition-transform"
                         whileHover="hover"
                         variants={cardVariants}
                         style={{

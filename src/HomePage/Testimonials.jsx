@@ -3,6 +3,7 @@
 import { Carousel } from "@mantine/carousel";
 
 import TestiMonalsCard from "./TestiMonalsCard.jsx";
+import {useMediaQuery} from "@mantine/hooks";
 
 const testimonials = [
     {
@@ -44,28 +45,35 @@ const testimonials = [
     },
 ]
 const Testimonials = () => {
-    return (<div className=" w-full my-10 px-12">
-        <div className="text-5xl text-mine-shaft-100 text-center">
+    const isLargeScreen = useMediaQuery("(min-width: 1024px)");
+    const isMediumScreen = useMediaQuery("(min-width: 648px) and (max-width: 1023px)");
+
+    const slideSize = isLargeScreen
+        ? "25%"
+        : isMediumScreen
+            ? "50%"
+            : "100%";
+
+    return (<div className=" w-full my-12 px-12">
+        <div className=" text-3xl md:text-5xl text-mine-shaft-100 text-center">
             What <span className="text-fuchsia-pink-400 leading-tight">User</span> says about us ?
         </div>
 
         <Carousel
-            height={200}
-            slideSize="25%"
-            slideGap="sm"
+            height={250}
+            slideSize={slideSize}
+            slideGap="md"
+
             loop
             align="start"
-            className=" my-10"
+            className="my-10"
         >
-            <>
-                {testimonials.map((item, index) => (
-                    <Carousel.Slide key={index} >
-                        <TestiMonalsCard item={item} />
-                    </Carousel.Slide>
-                ))}
-            </>
+            {testimonials.map((item, index) => (
+                <Carousel.Slide key={index}>
+                    <TestiMonalsCard item={item} />
+                </Carousel.Slide>
+            ))}
         </Carousel>
-
 
     </div>)
 }
