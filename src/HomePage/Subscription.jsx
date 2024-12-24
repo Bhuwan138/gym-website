@@ -9,7 +9,7 @@ const Subscribe = () => {
             </div>
 
 
-            <div className="flex  gap-4 bg-mine-shaft-700 rounded-xl items-center w-full sm:w-auto px-3 py-2">
+            <div className="flex  gap-4 md:flex-row flex-col bg-mine-shaft-700 rounded-xl items-center w-full sm:w-auto px-3 py-2">
                 <TextInput
                     placeholder="Your@gmail.com"
                     variant="unstyled"
@@ -21,7 +21,7 @@ const Subscribe = () => {
                     size="md"
                     className="!rounded-lg w-full sm:w-auto"
                 >
-                   Join
+                   Subscribe
                 </Button>
             </div>
         </div>
