@@ -21,18 +21,19 @@ const Footer=()=>{
     ];
 
     return(
-        <div className="bg-mine-shaft-950   pb-20 pt-4 font-['poppins'] ">
-            <div className='mt-20 flex gap-10 justify-around w-full  '>
+        <div className="pt-20 bg-mine-shaft-950  font-['poppins'] ">
+            <div className='my-20  flex gap-10 justify-around w-full  '>
                 <div className=" w-1/4 flex flex-col gap-4 ml-20">
                     <div>
                         <img src="klumfit_asset.png" alt="logo" className="h-10 w-44 "/>
                     </div>
                     <p className="text-mine-shaft-200">
                         The gym is not just
-                        a place to work out; its a space to push your limits, build strength, and transform your body and mind.
+                        a place to work out; its a space to push your limits, build strength, and transform your body
+                        and mind.
                     </p>
                     <div
-                        className='flex gap-2 text-fuchsia-pink-600 [&>div]:bg-mine-shaft-600 [&>div]:rounded-full [&>div]:p-2 '>
+                        className={"flex gap-2 w-6 text-fuchsia-pink-600 [&>div]:bg-mine-shaft-900 [&>div]:p-2 [&>div]:rounded-full [&>div]:cursor-pointer hover:[&>div]:bg-mine-shaft-700"}>
                         <div><IconBrandFacebook stroke={2}/></div>
                         <div><IconBrandLinkedin stroke={2}/></div>
                         <div><IconBrandInstagram stroke={2}/></div>
@@ -54,8 +55,13 @@ const Footer=()=>{
                         </div>
                     ))
                 }
-
             </div>
+
+            <div
+                className={"flex items-center text-lg justify-center text-mine-shaft-200 py-7 border-t border-t-mine-shaft-300 font-semibold"}>
+                &copy; 2023   &nbsp; <span className={"text-fuchsia-pink-400"}>Klumfit.</span> &nbsp;  All rights reserved.
+            </div>
+
         </div>
     )
 }

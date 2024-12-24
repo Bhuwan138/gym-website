@@ -1,50 +1,50 @@
 
 
-import {Carousel} from "@mantine/carousel";
+import { Carousel } from "@mantine/carousel";
 
 import TestiMonalsCard from "./TestiMonalsCard.jsx";
 
-const testimonials=[
+const testimonials = [
     {
-        avatar:"avatar",
+        avatar: "avatar",
         name: "Smarika Bist",
-        review: "This job portal made job search easy and quick. Recommended to all job seekers!",
-        rating:4
+        review: "Joining this gym was the best decision of my life! The trainers are amazing, and the programs are tailored to your goals. I've never felt stronger or healthier",
+        rating: 4
     },
 
     {
-        avatar:"avatar1",
+        avatar: "avatar1",
         name: "Laxmal Pandey",
-        review: "Found my dream job within a week! The application process was smooth.",
-        rating:4.5
+        review: "The community here is incredible! Everyone is so supportive, and the trainers genuinely care about your progress. It's not just a gym, it's a lifestyle",
+        rating: 4.5
     },
     {
-        avatar:"avatar2",
+        avatar: "avatar2",
         name: "Shreya Jain",
-        review: "I secured a job offer within days of applying. Exceptional user experience and support.",
-        rating:5
+        review: "State-of-the-art equipment, a clean and friendly environment, and a variety of classes make this gym stand out. Highly recommended!",
+        rating: 5
     },
     {
-        avatar:"avatar1",
+        avatar: "avatar1",
         name: "Kb",
-        review: "Highly efficient job portal with excellent resources. Helped me land a great position.",
-        rating:4.5
+        review: "The personal training sessions are game-changing! My coach has helped me achieve things I never thought possible. I've lost 20 pounds in three months",
+        rating: 4.5
     },
     {
-        avatar:"avatar2",
+        avatar: "avatar2",
         name: "Kabita",
-        review: "I secured a job offer within days of applying. Exceptional user experience and support.",
-        rating:5
+        review: "Every time I walk into the gym, I feel motivated to push myself. The music, the energy, and the staff create the perfect workout vibe.",
+        rating: 5
     },
     {
-        avatar:"avatar1",
+        avatar: "avatar1",
         name: "Ram",
-        review: "Highly efficient job portal with excellent resources. Helped me land a great position.",
-        rating:4.5
+        review: "I love the group classes here! They are fun, challenging, and perfect for all fitness levels. The yoga sessions are my favorite.",
+        rating: 4.5
     },
 ]
-const Testimonials=()=>{
-    return(<div className=" w-full my-10 px-12">
+const Testimonials = () => {
+    return (<div className=" w-full my-10 px-12">
         <div className="text-5xl text-mine-shaft-100 text-center">
             What <span className="text-fuchsia-pink-400 leading-tight">User</span> says about us ?
         </div>

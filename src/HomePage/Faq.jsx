@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {Accordion, Divider} from '@mantine/core';
+import { Accordion, Divider } from '@mantine/core';
 
 const faqs = [
     {
@@ -26,19 +26,15 @@ const FAQAccordion = () => {
             <h2 className="text-3xl text-white font-bold mb-6 text-center">
                 Frequently <span className="text-fuchsia-pink-400">Asked</span> Questions
             </h2>
-            <Accordion
-              className="bg-mine-shaft-800 "
-                variant="contained"
-
-            >
+            <Accordion className="bg-mine-shaft-800 " variant="contained">
                 {faqs.map((faq, index) => (
-                    <>
-                        <Accordion.Item value={index.toString()} key={index}  className="bg-mine-shaft-800  mt-5">
+                    <div key={index} className={"flex flex-col gap-2"}>
+                        <Accordion.Item value={index.toString()} key={index} className="bg-mine-shaft-800">
                             <Accordion.Control>{` ${faq.question}`}</Accordion.Control>
                             <Accordion.Panel >{faq.answer}</Accordion.Panel>
                         </Accordion.Item>
-                        <Divider color={"mineShaft.5"} size={'md'}/>
-                    </>
+                        <Divider color={"mineShaft.5"} size={'md'} />
+                    </div>
                 ))}
             </Accordion>
         </div>
